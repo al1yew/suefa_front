@@ -57,4 +57,199 @@ input::-webkit-inner-spin-button {
   --robotomedium: RobotoMedium;
   --robotolight: RobotoLight;
 }
+
+#body {
+  background-color: #ECF2FF;
+}
+
+@-webkit-keyframes animateps {
+  0% {
+    width: 5px;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 5px;
+  }
+}
+
+@keyframes animateps {
+  0% {
+    width: 5px;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 5px;
+  }
+}
+
+#main #mainpage {
+  padding: 20px 0;
+  font-family: var(--robotomedium);
+}
+
+#main #mainpage .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #mainpage .all .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #mainpage .all .first .firstp {
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+}
+
+#main #mainpage .all .first .firstp::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: blue;
+  -webkit-animation: animateps 2s ease infinite;
+          animation: animateps 2s ease infinite;
+}
+
+#main #mainpage .all .first .firstp::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background-color: blue;
+  -webkit-animation: animateps 2s ease infinite;
+          animation: animateps 2s ease infinite;
+}
+
+#main #mainpage .all .first .secondp {
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+}
+
+#main #mainpage .all .first .secondp::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: blue;
+  -webkit-animation: animateps 2s linear infinite;
+          animation: animateps 2s linear infinite;
+}
+
+#main #mainpage .all .first .secondp::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background-color: blue;
+  -webkit-animation: animateps 2s linear infinite;
+          animation: animateps 2s linear infinite;
+}
+
+#main #mainpage .all .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100px;
+  margin-top: 20px;
+}
+
+#main #mainpage .all .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+#main #mainpage .all .third .gametap {
+  border-radius: 5px;
+  border: 0.5px solid blue;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main #mainpage .all .third .gametap i {
+  font-size: 50px;
+}
+
+#main #mainpage .all .third .gametap:hover {
+  background-color: blue;
+  color: white;
+}
+
+#main #mainpage .all .fourth {
+  border: 0.5px solid blue;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#main #mainpage .all .fourth:hover {
+  background-color: blue;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
