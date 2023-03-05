@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+:root {
+    --robotobold: RobotoBold;
+    --robotomedium: RobotoMedium;
+    --robotolight: RobotoLight;
+}
+
+@import 'media';
+@import 'terms';
+
