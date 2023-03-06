@@ -16,18 +16,18 @@ p {
 }
 
 @font-face {
-  font-family: RobotoBold;
-  src: url(../fonts/roboto/Roboto-Bold.ttf);
+  font-family: MontBold;
+  src: url(../fonts/montserrat/Montserrat-Bold.ttf);
 }
 
 @font-face {
-  font-family: RobotoMedium;
-  src: url(../fonts/roboto/Roboto-Medium.ttf);
+  font-family: MontMedium;
+  src: url(../fonts/montserrat/Montserrat-Medium.ttf);
 }
 
 @font-face {
-  font-family: RobotoLight;
-  src: url(../fonts/roboto/Roboto-Light.ttf);
+  font-family: MontLight;
+  src: url(../fonts/montserrat/Montserrat-Light.ttf);
 }
 
 input::-webkit-outer-spin-button,
@@ -53,51 +53,38 @@ input::-webkit-inner-spin-button {
 }
 
 :root {
-  --robotobold: RobotoBold;
-  --robotomedium: RobotoMedium;
-  --robotolight: RobotoLight;
+  --montbold: MontBold;
+  --montmedium: MontMedium;
+  --montlight: MontLight;
 }
 
 #body {
-  background-color: #ECF2FF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#252525), to(#46025F));
+  background: linear-gradient(180deg, #252525 0%, #46025F 100%);
+  height: 100vh;
+  color: white;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 
-@-webkit-keyframes animateps {
-  0% {
-    width: 5px;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 5px;
-  }
+#mainpage {
+  font-family: var(--montmedium);
+  margin: 0;
+  padding: 0;
+  padding: 30px 0;
 }
 
-@keyframes animateps {
-  0% {
-    width: 5px;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 5px;
-  }
+#mainpage .all {
+  margin: 0;
+  padding: 0;
 }
 
-#main #mainpage {
-  padding: 20px 0;
-  font-family: var(--robotomedium);
-}
-
-#main #mainpage .all {
+#mainpage .all .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -105,95 +92,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-#main #mainpage .all .first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#main #mainpage .all .first .firstp {
-  text-align: center;
-  font-size: 25px;
-  position: relative;
-}
-
-#main #mainpage .all .first .firstp::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background-color: blue;
-  -webkit-animation: animateps 2s ease infinite;
-          animation: animateps 2s ease infinite;
-}
-
-#main #mainpage .all .first .firstp::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 2px;
-  background-color: blue;
-  -webkit-animation: animateps 2s ease infinite;
-          animation: animateps 2s ease infinite;
-}
-
-#main #mainpage .all .first .secondp {
-  text-align: center;
-  font-size: 25px;
-  position: relative;
-}
-
-#main #mainpage .all .first .secondp::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background-color: blue;
-  -webkit-animation: animateps 2s linear infinite;
-          animation: animateps 2s linear infinite;
-}
-
-#main #mainpage .all .first .secondp::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 2px;
-  background-color: blue;
-  -webkit-animation: animateps 2s linear infinite;
-          animation: animateps 2s linear infinite;
-}
-
-#main #mainpage .all .second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 100px;
-  margin-top: 20px;
-}
-
-#main #mainpage .all .third {
+#mainpage .all .middle .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,12 +106,119 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-#main #mainpage .all .third .gametap {
-  border-radius: 5px;
-  border: 0.5px solid blue;
+#mainpage .all .middle .first span {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  border-radius: 25px;
+  background-color: green;
+  background: rgba(255, 255, 255, 0.01);
+  color: #89DC65;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
+          box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#mainpage .all .middle .first span:hover {
+  background: rgba(153, 6, 6, 0.2);
+}
+
+#mainpage .all .middle .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#mainpage .all .middle .second span {
+  text-align: center;
+  width: 24%;
+  background: #46025F;
+  border-radius: 30px;
+  color: #89DC65;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+#mainpage .all .middle .second span:nth-child(1) {
+  margin-right: 10px;
+}
+
+#mainpage .all .middle .second span:nth-child(2) {
+  margin-left: 10px;
+}
+
+#mainpage .all .middle .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 100px;
+  color: #89DC65;
+}
+
+#mainpage .all .middle .third span {
+  text-align: center;
+}
+
+#mainpage .all .middle .third span:nth-child(1) {
+  margin-right: 50px;
+}
+
+#mainpage .all .middle .third span:nth-child(2) {
+  margin-left: 50px;
+}
+
+#mainpage .all .middle .fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#mainpage .all .middle .fourth .gametap {
+  background: rgba(255, 255, 255, 0.01);
+  -webkit-box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
+          box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 30px;
+  cursor: pointer;
   width: 120px;
   height: 120px;
   display: -webkit-box;
@@ -220,36 +230,34 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#mainpage .all .middle .fourth .gametap:hover {
+  background: rgba(153, 6, 6, 0.2);
+  -webkit-transform: translateY(5%) scale(1.1);
+          transform: translateY(5%) scale(1.1);
+}
+
+#mainpage .all .middle .fifth {
+  background: #89DC65;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 25%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #46025F;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-#main #mainpage .all .third .gametap i {
-  font-size: 50px;
-}
-
-#main #mainpage .all .third .gametap:hover {
-  background-color: blue;
-  color: white;
-}
-
-#main #mainpage .all .fourth {
-  border: 0.5px solid blue;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-  padding: 15px 30px;
-  margin-top: 30px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-#main #mainpage .all .fourth:hover {
-  background-color: blue;
-  color: white;
+#mainpage .all .middle .fifth:hover {
+  background: #89dc6570;
+  color: #bbbbbb;
 }
 /*# sourceMappingURL=style.css.map */

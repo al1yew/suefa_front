@@ -689,7 +689,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1100px;
+        max-width: 1140px;
         /* original 1140 */
     }
 }
