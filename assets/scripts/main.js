@@ -24,7 +24,6 @@ let arr = [
 let a = 0;
 let b = 0;
 
-
 for (let div of game_elements.children) {
 
     div.onclick = function () {
@@ -38,8 +37,6 @@ for (let div of game_elements.children) {
             result.className = 'col-lg-6 col-8';
             result.classList.add('draw');
             result.style.color = 'black';
-            a++;
-            b++;
         }
         else if (div.id == 'rock' && math == 'paper') {
             result.innerHTML = 'You Lost!';
@@ -93,5 +90,4 @@ for (let div of game_elements.children) {
 
     }
 }
-
 */
