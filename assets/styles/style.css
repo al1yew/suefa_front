@@ -69,6 +69,148 @@ input::-webkit-inner-spin-button {
        user-select: none;
 }
 
+#login {
+  font-family: var(--montmedium);
+  margin: 0;
+  padding: 0;
+  padding: 30px 0;
+}
+
+#login .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 89vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#login .all form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65, 0px 0px 20px 1px #46025F;
+          box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65, 0px 0px 20px 1px #46025F;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: var(--montmedium);
+}
+
+#login .all form .loginp {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #89DC65;
+}
+
+#login .all form label {
+  margin-top: 30px;
+  color: #89DC65;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#login .all form .inputkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65, 0px 0px 20px 1px #46025F;
+          box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65, 0px 0px 20px 1px #46025F;
+}
+
+#login .all form .inputkeeper span {
+  letter-spacing: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 6px 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #89DC65;
+  transition: 0.2s;
+  text-align: end;
+}
+
+#login .all form .inputkeeper input {
+  font-size: 18px;
+  letter-spacing: 3px;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 6px 0px;
+  transition: 0.2s;
+  color: #89DC65;
+  background: transparent;
+}
+
+#login .all form .inputkeeper input::-webkit-input-placeholder {
+  color: #89DC65;
+  font-size: 18px;
+}
+
+#login .all form .inputkeeper input:-ms-input-placeholder {
+  color: #89DC65;
+  font-size: 18px;
+}
+
+#login .all form .inputkeeper input::-ms-input-placeholder {
+  color: #89DC65;
+  font-size: 18px;
+}
+
+#login .all form .inputkeeper input::placeholder {
+  color: #89DC65;
+  font-size: 18px;
+}
+
+#login .all form button {
+  background-color: #89DC65;
+  color: #46025F;
+  font-size: 18px;
+  padding: 7px 60px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: none;
+  border: none;
+}
+
+#login .all form button:hover {
+  background-color: rgba(137, 220, 101, 0.6);
+  color: #161616;
+}
+
 #mainpage {
   font-family: var(--montmedium);
   margin: 0;
@@ -94,6 +236,7 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 #mainpage .all .middle .first {
@@ -123,7 +266,6 @@ input::-webkit-inner-spin-button {
           backdrop-filter: blur(50px);
   -webkit-box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
           box-shadow: inset 0px 4px 18px #89DC65, inset 0px 1px 0px #89DC65;
-  cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -149,7 +291,7 @@ input::-webkit-inner-spin-button {
 
 #mainpage .all .middle .second span {
   text-align: center;
-  width: 24%;
+  width: 27%;
   background: #46025F;
   border-radius: 30px;
   color: #89DC65;
@@ -178,7 +320,7 @@ input::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
-  font-size: 120px;
+  font-size: 105px;
   font-weight: 800;
   line-height: 100px;
   color: #89DC65;
@@ -189,11 +331,11 @@ input::-webkit-inner-spin-button {
 }
 
 #mainpage .all .middle .third span:nth-child(1) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 #mainpage .all .middle .third span:nth-child(2) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 #mainpage .all .middle .fourth {
@@ -259,5 +401,43 @@ input::-webkit-inner-spin-button {
 #mainpage .all .middle .fifth:hover {
   background: #89dc6570;
   color: #bbbbbb;
+}
+
+#mainpage .all .middle .absolutuser {
+  position: absolute;
+  top: 27%;
+  left: 0%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  z-index: 5;
+  opacity: 0;
+}
+
+#mainpage .all .middle .moveright {
+  left: 7%;
+  -webkit-transform: rotate(90deg) scale(1.2);
+          transform: rotate(90deg) scale(1.2);
+  opacity: 1;
+}
+
+#mainpage .all .middle .absolutcomp {
+  position: absolute;
+  top: 27%;
+  right: 0%;
+  -webkit-transform: rotate(-90deg) scaleX(-1);
+          transform: rotate(-90deg) scaleX(-1);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 0;
+  z-index: 5;
+}
+
+#mainpage .all .middle .moveleft {
+  right: 7%;
+  -webkit-transform: rotate(-90deg) scaleX(-1) scale(1.2);
+          transform: rotate(-90deg) scaleX(-1) scale(1.2);
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

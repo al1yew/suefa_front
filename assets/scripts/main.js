@@ -83,11 +83,48 @@ for (let div of game_elements.children) {
 
         document.getElementById('count_player').innerHTML = a;
         document.getElementById('count_comp').innerHTML = b;
-
-        // setTimeout(function () {
-        //     window.location.reload();
-        // }, 3000);
-
     }
 }
 */
+
+$(document).ready(function () {
+
+    $('.preloaderdiv').addClass('d-none');
+    $('#phoneno').focus();
+
+    $(document).on('click', '#rock', function () {
+        $('.absolutuser').addClass('moveright')
+        $('.absolutcomp').addClass('moveleft')
+
+        setTimeout(() => {
+            $('.absolutuser').removeClass('moveright')
+            $('.absolutcomp').removeClass('moveleft')
+        }, 750);
+    })
+
+    //#region prevent letters and nonnumeric
+
+    $(document).on('input', '#phoneno', function (e) {
+        if (!/^[0-9]+$/.test($(this).val())) {
+            $(this).val($(this).val().slice(0, -1))
+        }
+    })
+
+    //#endregion prevent letters and nonnumeric
+
+    //#region submit login
+
+    $(document).on('submit', '#loginform', function (e) {
+        e.preventDefault();
+
+        $('#login').hide(300);
+        $('#mainpage').show(300);
+    })
+
+    //#endregion submit login
+
+    $(document).on('click', '#reload', function () {
+        window.location.reload();
+    })
+
+})
