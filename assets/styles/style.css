@@ -123,6 +123,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 576px) {
+  body {
+    min-height: 89vh !important;
+  }
   #login .all form {
     border-radius: 10px !important;
     padding: 20px !important;
@@ -169,7 +172,7 @@ input::-webkit-inner-spin-button {
             box-shadow: none !important;
   }
   #mainpage {
-    padding: 20px 0 !important;
+    padding: 15px 0 !important;
   }
   #mainpage .all .reklam1,
   #mainpage .all .reklam2 {
@@ -179,11 +182,12 @@ input::-webkit-inner-spin-button {
     overflow-x: hidden !important;
   }
   #mainpage .all .middle .first {
-    margin-bottom: 30px !important;
+    margin-bottom: 20px !important;
   }
   #mainpage .all .middle .first span {
     font-size: 16px !important;
     margin-bottom: 10px !important;
+    padding: 8px 0 !important;
   }
   #mainpage .all .middle .second {
     -webkit-box-pack: justify !important;
@@ -196,10 +200,12 @@ input::-webkit-inner-spin-button {
     font-size: 20px !important;
   }
   #mainpage .all .middle .third {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
     margin-bottom: 30px !important;
     font-size: 65px !important;
+    line-height: 70px !important;
   }
   #mainpage .all .middle .third span {
     margin: 0 !important;
@@ -225,24 +231,24 @@ input::-webkit-inner-spin-button {
     font-size: 16px !important;
   }
   #mainpage .all .middle .absolutuser {
-    top: 45% !important;
+    top: 41% !important;
     left: -10% !important;
   }
   #mainpage .all .middle .absolutuser svg {
     height: 50px !important;
   }
   #mainpage .all .middle .moveright {
-    left: 2% !important;
+    left: 0% !important;
   }
   #mainpage .all .middle .absolutcomp {
-    top: 45% !important;
+    top: 41% !important;
     right: -10% !important;
   }
   #mainpage .all .middle .absolutcomp svg {
     height: 50px !important;
   }
   #mainpage .all .middle .moveleft {
-    right: 2% !important;
+    right: 0% !important;
   }
 }
 
