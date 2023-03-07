@@ -174,10 +174,6 @@ input::-webkit-inner-spin-button {
   #mainpage {
     padding: 15px 0 !important;
   }
-  #mainpage .all .reklam1,
-  #mainpage .all .reklam2 {
-    display: none !important;
-  }
   #mainpage .all .middle {
     overflow-x: hidden !important;
   }
@@ -249,6 +245,116 @@ input::-webkit-inner-spin-button {
   }
   #mainpage .all .middle .moveleft {
     right: 0% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #mainpage {
+    padding: 20px 0 !important;
+  }
+  #mainpage .all .middle .first {
+    margin-bottom: 20px !important;
+  }
+  #mainpage .all .middle .first span {
+    font-size: 16px !important;
+    width: 47% !important;
+  }
+  #mainpage .all .middle .second {
+    margin-bottom: 20px !important;
+  }
+  #mainpage .all .middle .second span {
+    width: 35% !important;
+    font-size: 16px !important;
+  }
+  #mainpage .all .middle .second span:nth-child(1) {
+    margin-right: 20px !important;
+  }
+  #mainpage .all .middle .second span:nth-child(2) {
+    margin-left: 20px !important;
+  }
+  #mainpage .all .middle .third {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    font-size: 70px !important;
+    line-height: 70px !important;
+  }
+  #mainpage .all .middle .fourth {
+    margin-bottom: 20px !important;
+  }
+  #mainpage .all .middle .fourth .gametap {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #mainpage .all .middle .fourth .gametap svg {
+    height: 50px !important;
+  }
+  #mainpage .all .middle .fourth .gametap:hover {
+    -webkit-transform: translateY(0%) scale(1) !important;
+            transform: translateY(0%) scale(1) !important;
+  }
+  #mainpage .all .middle .fifth {
+    width: 35% !important;
+    font-size: 16px !important;
+  }
+  #mainpage .all .middle .absolutuser {
+    top: 31% !important;
+  }
+  #mainpage .all .middle .absolutuser svg {
+    height: 60px !important;
+  }
+  #mainpage .all .middle .absolutcomp {
+    top: 31% !important;
+  }
+  #mainpage .all .middle .absolutcomp svg {
+    height: 60px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #mainpage {
+    padding: 20px 0 !important;
+  }
+  #mainpage .all .middle .first {
+    margin-bottom: 30px !important;
+  }
+  #mainpage .all .middle .first span {
+    font-size: 16px !important;
+  }
+  #mainpage .all .middle .second span {
+    width: 35% !important;
+    font-size: 16px !important;
+  }
+  #mainpage .all .middle .third {
+    margin-bottom: 30px !important;
+    font-size: 90px !important;
+    line-height: 80px !important;
+  }
+  #mainpage .all .middle .fourth {
+    margin-bottom: 30px !important;
+  }
+  #mainpage .all .middle .fourth .gametap {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #mainpage .all .middle .fourth .gametap svg {
+    height: 70px !important;
+  }
+  #mainpage .all .middle .fifth {
+    padding: 15px !important;
+    width: 35% !important;
+    font-size: 18px !important;
+  }
+  #mainpage .all .middle .absolutuser {
+    top: 32% !important;
+  }
+  #mainpage .all .middle .absolutuser svg {
+    height: 70px !important;
+  }
+  #mainpage .all .middle .absolutcomp {
+    top: 32% !important;
+  }
+  #mainpage .all .middle .absolutcomp svg {
+    height: 70px !important;
   }
 }
 
@@ -408,7 +514,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--montmedium);
   margin: 0;
   padding: 0;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 #mainpage .all {
@@ -444,7 +550,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 #mainpage .all .middle .first span {
@@ -512,7 +618,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   font-size: 105px;
   font-weight: 800;
   line-height: 100px;
@@ -543,7 +649,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 #mainpage .all .middle .fourth .gametap {

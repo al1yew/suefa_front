@@ -68,12 +68,6 @@
         padding: 15px 0 !important;
 
         .all {
-
-            .reklam1,
-            .reklam2 {
-                display: none !important;
-            }
-
             .middle {
                 overflow-x: hidden !important;
 
@@ -156,6 +150,157 @@
 
                 .moveleft {
                     right: 0% !important;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:576px) and (max-width:992px) {
+
+    #mainpage {
+        padding: 20px 0 !important;
+
+        .all {
+
+            .middle {
+
+                .first {
+                    margin-bottom: 20px !important;
+
+                    span {
+                        font-size: 16px !important;
+                        width: 47% !important;
+                    }
+                }
+
+                .second {
+                    margin-bottom: 20px !important;
+
+                    span {
+                        width: 35% !important;
+                        font-size: 16px !important;
+
+                        &:nth-child(1) {
+                            margin-right: 20px !important;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 20px !important;
+                        }
+                    }
+                }
+
+                .third {
+                    width: 100% !important;
+                    margin-bottom: 20px !important;
+                    font-size: 70px !important;
+                    line-height: 70px !important;
+                }
+
+                .fourth {
+                    margin-bottom: 20px !important;
+
+                    .gametap {
+                        width: 100px !important;
+                        height: 100px !important;
+
+                        svg {
+                            height: 50px !important;
+                        }
+
+                        &:hover {
+                            transform: translateY(0%) scale(1) !important;
+                        }
+                    }
+                }
+
+                .fifth {
+                    width: 35% !important;
+                    font-size: 16px !important;
+                }
+
+                .absolutuser {
+                    top: 31% !important;
+
+                    svg {
+                        height: 60px !important;
+                    }
+                }
+
+                .absolutcomp {
+                    top: 31% !important;
+
+                    svg {
+                        height: 60px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+
+    #mainpage {
+        padding: 20px 0 !important;
+
+        .all {
+            .middle {
+                .first {
+                    margin-bottom: 30px !important;
+
+                    span {
+                        font-size: 16px !important;
+                    }
+                }
+
+                .second {
+                    span {
+                        width: 35% !important;
+                        font-size: 16px !important;
+                    }
+                }
+
+                .third {
+                    margin-bottom: 30px !important;
+                    font-size: 90px !important;
+                    line-height: 80px !important;
+                }
+
+                .fourth {
+                    margin-bottom: 30px !important;
+
+                    .gametap {
+                        width: 100px !important;
+                        height: 100px !important;
+
+                        svg {
+                            height: 70px !important;
+                        }
+                    }
+                }
+
+                .fifth {
+                    padding: 15px !important;
+                    width: 35% !important;
+                    font-size: 18px !important;
+                }
+
+                .absolutuser {
+                    top: 32% !important;
+
+                    svg {
+                        height: 70px !important;
+                    }
+                }
+
+                .absolutcomp {
+                    top: 32% !important;
+
+                    svg {
+                        height: 70px !important;
+                    }
                 }
             }
         }
