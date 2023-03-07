@@ -215,6 +215,10 @@ input::-webkit-inner-spin-button {
   #mainpage .all .middle .fourth .gametap svg {
     height: calc(100vw*0.15) !important;
   }
+  #mainpage .all .middle .fourth .gametap:hover {
+    -webkit-transform: translateY(0%) scale(1) !important;
+            transform: translateY(0%) scale(1) !important;
+  }
   #mainpage .all .middle .fifth {
     padding: 10px !important;
     width: 50% !important;

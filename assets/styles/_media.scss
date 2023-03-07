@@ -113,6 +113,10 @@
                         svg {
                             height: calc(100vw*0.15) !important;
                         }
+
+                        &:hover {
+                            transform: translateY(0%) scale(1) !important;
+                        }
                     }
                 }
 
