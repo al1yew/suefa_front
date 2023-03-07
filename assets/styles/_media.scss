@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --montbold: MontBold;
+    --montmedium: MontMedium;
+    --montlight: MontLight;
+}
+
+@media (max-width:576px) {
+    #login {
+        .all {
+            form {
+                border-radius: 10px !important;
+                padding: 20px !important;
+
+                .loginp {
+                    font-size: 16px !important;
+                }
+
+                label {
+                    margin-top: 20px !important;
+                    font-size: 14px !important;
+                }
+
+                .inputkeeper {
+
+                    span {
+                        letter-spacing: 2px !important;
+                        font-size: 14px !important;
+                        padding-bottom: 6px !important;
+                    }
+
+                    input {
+                        font-size: 14px !important;
+                        letter-spacing: 3px !important;
+
+                        &::placeholder {
+                            font-size: 14px !important;
+                            letter-spacing: 2px !important;
+                        }
+                    }
+
+                }
+
+                button {
+                    font-size: 14px !important;
+                    margin: 0 auto !important;
+                    margin-top: 30px !important;
+
+                    &:hover {
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #mainpage {
+        padding: 20px 0 !important;
+
+        .all {
+
+            .reklam1,
+            .reklam2 {
+                display: none !important;
+            }
+
+            .middle {
+                .first {
+                    margin-bottom: 30px !important;
+
+                    span {
+                        font-size: 16px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+
+                .second {
+                    justify-content: space-between !important;
+
+                    span {
+                        width: 47% !important;
+                        margin: 0 !important;
+                        font-size: 20px !important;
+                    }
+                }
+
+                .third {
+                    justify-content: space-around !important;
+                    margin-bottom: 30px !important;
+                    font-size: 65px !important;
+
+                    span {
+                        margin: 0 !important;
+                    }
+                }
+
+                .fourth {
+                    margin-bottom: 30px !important;
+
+                    .gametap {
+                        width: 90px !important;
+                        height: 90px !important;
+                        margin: 0 !important;
+
+                        svg {
+                            height: 50px !important;
+                        }
+                    }
+                }
+
+                .fifth {
+                    padding: 10px !important;
+                    width: 50% !important;
+                    font-size: 16px !important;
+                }
+
+                .absolutuser {
+                    top: 45% !important;
+                    left: -10% !important;
+
+                    svg {
+                        height: 50px !important;
+                    }
+                }
+
+                .moveright {
+                    left: 2% !important;
+                }
+
+                .absolutcomp {
+                    top: 45% !important;
+                    right: -10% !important;
+
+                    svg {
+                        height: 50px !important;
+                    }
+                }
+
+                .moveleft {
+                    right: 2% !important;
+                }
+            }
+        }
+    }
+}

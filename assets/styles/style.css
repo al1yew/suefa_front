@@ -109,6 +109,136 @@ input::-webkit-inner-spin-button {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --montbold: MontBold;
+  --montmedium: MontMedium;
+  --montlight: MontLight;
+}
+
+@media (max-width: 576px) {
+  #login .all form {
+    border-radius: 10px !important;
+    padding: 20px !important;
+  }
+  #login .all form .loginp {
+    font-size: 16px !important;
+  }
+  #login .all form label {
+    margin-top: 20px !important;
+    font-size: 14px !important;
+  }
+  #login .all form .inputkeeper span {
+    letter-spacing: 2px !important;
+    font-size: 14px !important;
+    padding-bottom: 6px !important;
+  }
+  #login .all form .inputkeeper input {
+    font-size: 14px !important;
+    letter-spacing: 3px !important;
+  }
+  #login .all form .inputkeeper input::-webkit-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #login .all form .inputkeeper input:-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #login .all form .inputkeeper input::-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #login .all form .inputkeeper input::placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #login .all form button {
+    font-size: 14px !important;
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+  }
+  #login .all form button:hover {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #mainpage {
+    padding: 20px 0 !important;
+  }
+  #mainpage .all .reklam1,
+  #mainpage .all .reklam2 {
+    display: none !important;
+  }
+  #mainpage .all .middle .first {
+    margin-bottom: 30px !important;
+  }
+  #mainpage .all .middle .first span {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+  #mainpage .all .middle .second {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  #mainpage .all .middle .second span {
+    width: 47% !important;
+    margin: 0 !important;
+    font-size: 20px !important;
+  }
+  #mainpage .all .middle .third {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    margin-bottom: 30px !important;
+    font-size: 65px !important;
+  }
+  #mainpage .all .middle .third span {
+    margin: 0 !important;
+  }
+  #mainpage .all .middle .fourth {
+    margin-bottom: 30px !important;
+  }
+  #mainpage .all .middle .fourth .gametap {
+    width: 90px !important;
+    height: 90px !important;
+    margin: 0 !important;
+  }
+  #mainpage .all .middle .fourth .gametap svg {
+    height: 50px !important;
+  }
+  #mainpage .all .middle .fifth {
+    padding: 10px !important;
+    width: 50% !important;
+    font-size: 16px !important;
+  }
+  #mainpage .all .middle .absolutuser {
+    top: 45% !important;
+    left: -10% !important;
+  }
+  #mainpage .all .middle .absolutuser svg {
+    height: 50px !important;
+  }
+  #mainpage .all .middle .moveright {
+    left: 2% !important;
+  }
+  #mainpage .all .middle .absolutcomp {
+    top: 45% !important;
+    right: -10% !important;
+  }
+  #mainpage .all .middle .absolutcomp svg {
+    height: 50px !important;
+  }
+  #mainpage .all .middle .moveleft {
+    right: 2% !important;
+  }
+}
+
 #body {
   background: -webkit-gradient(linear, left top, left bottom, from(#252525), to(#46025F));
   background: linear-gradient(180deg, #252525 0%, #46025F 100%);
