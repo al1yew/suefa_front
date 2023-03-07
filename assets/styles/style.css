@@ -175,6 +175,9 @@ input::-webkit-inner-spin-button {
   #mainpage .all .reklam2 {
     display: none !important;
   }
+  #mainpage .all .middle {
+    overflow-x: hidden !important;
+  }
   #mainpage .all .middle .first {
     margin-bottom: 30px !important;
   }
@@ -205,12 +208,12 @@ input::-webkit-inner-spin-button {
     margin-bottom: 30px !important;
   }
   #mainpage .all .middle .fourth .gametap {
-    width: 90px !important;
-    height: 90px !important;
+    width: 28% !important;
+    height: calc((100vw*0.27)) !important;
     margin: 0 !important;
   }
   #mainpage .all .middle .fourth .gametap svg {
-    height: 50px !important;
+    height: calc(100vw*0.15) !important;
   }
   #mainpage .all .middle .fifth {
     padding: 10px !important;

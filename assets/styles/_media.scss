@@ -11,6 +11,7 @@
 }
 
 @media (max-width:576px) {
+
     #login {
         .all {
             form {
@@ -70,6 +71,8 @@
             }
 
             .middle {
+                overflow-x: hidden !important;
+
                 .first {
                     margin-bottom: 30px !important;
 
@@ -103,12 +106,12 @@
                     margin-bottom: 30px !important;
 
                     .gametap {
-                        width: 90px !important;
-                        height: 90px !important;
+                        width: 28% !important;
+                        height: calc((100vw*0.27)) !important;
                         margin: 0 !important;
 
                         svg {
-                            height: 50px !important;
+                            height: calc(100vw*0.15) !important;
                         }
                     }
                 }
