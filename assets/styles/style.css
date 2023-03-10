@@ -556,7 +556,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 #mainpage .all .middle .first span {
@@ -591,7 +591,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 #mainpage .all .middle .second span {
@@ -624,7 +624,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 105px;
   font-weight: 800;
   line-height: 100px;
@@ -648,7 +648,7 @@ input::-webkit-inner-spin-button {
   font-size: 25px;
   letter-spacing: 2px;
   font-family: var(--montbold);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 #mainpage .all .middle .fourthcolor {
@@ -667,7 +667,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 #mainpage .all .middle .fifth .gametap {
@@ -702,7 +702,7 @@ input::-webkit-inner-spin-button {
 #mainpage .all .middle .sixth {
   background: #89DC65;
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   width: 25%;
   font-weight: 600;
@@ -713,11 +713,20 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin-bottom: 10px;
 }
 
 #mainpage .all .middle .sixth:hover {
   background: #89dc6570;
   color: #bbbbbb;
+}
+
+#mainpage .all .middle .seventh {
+  text-align: center;
+  color: white;
+  background-color: green;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 #mainpage .all .middle .absolutuser {
