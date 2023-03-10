@@ -206,6 +206,9 @@ input::-webkit-inner-spin-button {
   #mainpage .all .middle .third span {
     margin: 0 !important;
   }
+  #mainpage .all .middle .fourth {
+    font-size: 18px !important;
+  }
   #mainpage .all .middle .fifth {
     margin-bottom: 30px !important;
   }
@@ -277,6 +280,9 @@ input::-webkit-inner-spin-button {
     margin-bottom: 15px !important;
     font-size: 70px !important;
     line-height: 70px !important;
+  }
+  #mainpage .all .middle .fourth {
+    font-size: 22px !important;
   }
   #mainpage .all .middle .fifth {
     margin-bottom: 20px !important;
@@ -643,6 +649,10 @@ input::-webkit-inner-spin-button {
   letter-spacing: 2px;
   font-family: var(--montbold);
   margin-bottom: 20px;
+}
+
+#mainpage .all .middle .fourthcolor {
+  color: #89DC65;
 }
 
 #mainpage .all .middle .fifth {
