@@ -435,12 +435,6 @@ input::-webkit-inner-spin-button {
                 opacity: 0;
             }
 
-            .moveright {
-                left: 7%;
-                transform: rotate(90deg) scale(1.2);
-                opacity: 1;
-            }
-
             .absolutcomp {
                 position: absolute;
                 top: 27%;
@@ -454,6 +448,12 @@ input::-webkit-inner-spin-button {
             .moveleft {
                 right: 7%;
                 transform: rotate(-90deg) scaleX(-1) scale(1.2);
+                opacity: 1;
+            }
+
+            .moveright {
+                left: 7%;
+                transform: rotate(90deg) scale(1.2);
                 opacity: 1;
             }
         }

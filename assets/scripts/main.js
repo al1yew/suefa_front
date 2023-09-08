@@ -92,14 +92,14 @@ $(document).ready(function () {
     $('.preloaderdiv').addClass('d-none');
     $('#phoneno').focus();
 
-    $(document).on('click', '#rock', function () {
+    $(document).on('click', '#scissors', function () {
         $('.absolutuser').addClass('moveright')
         $('.absolutcomp').addClass('moveleft')
 
-        setTimeout(() => {
-            $('.absolutuser').removeClass('moveright')
-            $('.absolutcomp').removeClass('moveleft')
-        }, 750);
+        // setTimeout(() => {
+        //     $('.absolutuser').removeClass('moveright')
+        //     $('.absolutcomp').removeClass('moveleft')
+        // }, 750);
     })
 
     //#region prevent letters and nonnumeric
